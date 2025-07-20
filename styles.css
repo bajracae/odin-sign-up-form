@@ -1,0 +1,167 @@
+@font-face {
+	font-family: norse-bold;
+	src: url("Norse-Bold.otf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+#left {
+	width: 35%;
+	height: 100%;
+	background: url("unsplash.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#right {
+	width: 65%;
+	height: 100%;
+	background-color: #f9fafb;
+}
+
+#logo-container {
+	margin-top: 270px;
+	padding: 10px 0 10px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo-icon {
+	width: 125px;
+}
+
+#logo-name {
+	font-size: 8rem;
+	font-family: norse-bold;
+	color: white;
+	margin: 0;
+}
+
+#quote-container {
+	height: 35%;
+	margin: 0 550px 0 75px;
+	position: relative;
+}
+
+#quote-container > p {
+	font-size: 2.1rem;
+	font-family: Arial;
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#form-container {
+	height: 30%;
+	background-color: white;
+	box-shadow: 0 5px 5px lightgrey;
+	padding: 25px 0 25px 0;
+}
+
+#form-container > p {
+	margin: 0 0 0 75px;
+	font-size: 2.1rem;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+form {
+	margin: 10px 100px 0 75px;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+form > div {
+	margin-top: 30px;
+	margin-right: 100px;
+	font-size: 1.1rem;
+	font-family: Arial;
+	font-weight: bold;
+	letter-spacing: 0.15rem;
+}
+
+label {
+	display: block;
+	width: 100%;
+	font-size: 1.2rem;
+	color: #3f4248;
+}
+
+input {
+	width: 400px;
+	padding: 10px;
+	border: none;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+}
+
+input:focus {
+	border-color: blue;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 5px 5px lightgrey;
+	outline: 0 none;
+}
+
+input[type="password"]:invalid {
+	border-color: red;
+	border-width: 1px;
+}
+
+#buttons-container {
+	height: 35%;
+	position: relative;
+}
+
+#buttons-container > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 40px 100px 0 75px;
+}
+
+#submit-button {
+	background-color: #596d48;
+	color: white;
+	padding: 15px 50px 15px 50px;
+	font-size: 1.2rem;
+	font-family: Arial;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#submit-button:hover {
+	background-color: #8aa86f;
+}
+
+#buttons-container > div > p {
+	margin-top: 30px;
+	font-size: 1.2rem;
+	font-family: Arial;
+}
+
+#buttons-container > div > p > a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #596d48;
+}
+
+#buttons-container > div > p > a:hover {
+	text-decoration: none;
+	font-weight: bold;
+	color: #8aa86f;
+}
