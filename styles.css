@@ -1,3 +1,8 @@
+@font-face {
+	font-family: norse-bold;
+	src: url("Norse-Bold.otf");
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -11,19 +16,20 @@ body {
 }
 
 #left {
-	width: 35%;
+	width: 37%;
 	height: 100%;
-	background-color: lightgreen;
+	background: url("unsplash.jpg");
+	background-size: cover;
 }
 
 #right {
-	width: 65%;
+	width: 63%;
 	height: 100%;
-	background-color: lightyellow;
+	background-color: #f9fafb;
 }
 
 #logo {
-	margin-top: 200px;
+	margin-top: 250px;
 	background-color: rgba(0, 0, 0, 0.25);
 	display: flex;
 	flex-direction: row;
@@ -36,27 +42,109 @@ body {
 }
 
 #logo-name {
-	font-size: 50px;
+	font-size: 6rem;
+	font-family: norse-bold;
+	color: white;
+	margin: 0;
 }
 
 #quote {
 	width: 100%;
 	height: 33%;
-	background-color: lightblue;
+	/* background-color: lightblue; */
 }
 
 #quote > p {
 	margin: 0;
-	padding: 0;
+	padding: 150px 100px 0 60px;
+	font-size: 1.5rem;
+	font-family: Arial;
+	font-weight: bold;
 }
 
 #form {
 	width: 100%;
 	height: 33%;
-	background-color: antiquewhite;
+	background-color: white;
+	box-shadow: 0 5px 5px lightgrey;
 }
 
 #form > h2 {
 	margin: 0;
 	padding: 0;
+	padding: 50px 100px 0 60px;
+}
+
+#form > form > .row > label {
+	display: inline-block;
+}
+
+#buttons {
+	margin: 0;
+	padding: 40px 100px 0 60px;
+}
+
+#buttons > button {
+	background-color: #596d48;
+	color: white;
+	padding: 15px 50px 15px 50px;
+	font-size: 1rem;
+	font-family: Arial;
+	font-weight: bold;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#buttons > p {
+	font-size: 1rem;
+	font-family: Arial;
+}
+
+#buttons > p > a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #596d48;
+}
+
+label {
+	display: block;
+	width: 100%;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	/* max-width: 75%; */
+	padding: 15px 50px 15px 50px;
+}
+
+form > div {
+	margin-top: 10px;
+	margin-right: 100px;
+	font-size: 1rem;
+	font-family: Arial;
+	font-weight: 800;
+	letter-spacing: 0.1rem;
+}
+
+form > div > input {
+	width: 250px;
+	padding: 5px;
+	border: none;
+	border: solid 1px #ccc;
+}
+
+input:required {
+	
+}
+
+input:invalid {
+	border-color: red;
+	border-width: 1px;
+}
+
+input:focus {
+	border-color: blue;
+	border-width: 1px;
 }
